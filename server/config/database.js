@@ -1,9 +1,9 @@
 import mysql from 'mysql2/promise';
 
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'admin123',
+  host: '10.18.9.50',
+  user: 'usr_usuario',
+  password: 'UCC2025',
   database: 'blog',
   port: 3306,
 });
@@ -19,5 +19,6 @@ const testConnection = async () => {
 };
 
 testConnection();
+
 
 export default pool;
